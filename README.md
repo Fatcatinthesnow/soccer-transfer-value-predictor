@@ -1,4 +1,4 @@
-# Soccer Transfer Value Predictor
+# Football Transfer Value Predictor
 
 Predicts players' current market value (€) from performance and profile stats using machine learning.
 
@@ -16,11 +16,12 @@ This project builds an ML pipeline to estimate a player's transfer market value 
 
 ## Results
 
-| Model              | MAE (€)     | R²   |
-|--------------------|------------:|-----:|
-| KNN (baseline)     | ~3,596,000  | 0.16 |
-| Random Forest      | ~3,319,000  | 0.39 |
-| Gradient Boosting   | ~3,114,000  | **0.42** |
+| Model                 | MAE (€)     | R²   |
+|-----------------------|------------:|-----:|
+| KNN (baseline)        | ~3,596,000  | 0.16 |
+| Random Forest         | ~3,319,000  | 0.39 |
+| Support Vector Machine| ~3,318,388  | -0.09 |
+| Gradient Boosting     | ~3,114,000  | **0.42** |
 
 **Gradient Boosting** performed best. Hyperparameter tuning via grid search did not meaningfully improve on default settings, suggesting the defaults were already well-suited to this data.
 
